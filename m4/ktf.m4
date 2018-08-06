@@ -44,7 +44,7 @@ libsuffix="${libdir##*/}"
 # Also look for dependencies below --prefix, if set:
 #
 AS_IF([test "x$prefix" != "x" ],[export PKG_CONFIG_PATH=$prefix/$libsuffix/pkgconfig])
-PKG_CHECK_MODULES(GTEST, gtest >= 1.9.0, [HAVE_GTEST="yes"])
+PKG_CHECK_MODULES(GTEST, gtest >= 1.8.0, [HAVE_GTEST="yes"])
 
 ktf_build="`pwd`/../ktf"
 ktf_src="$ac_confdir/../ktf"
