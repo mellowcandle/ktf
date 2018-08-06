@@ -108,7 +108,7 @@ dnl
 libsuffix="${libdir##*/}"
 
 AS_IF([test "x$gtest_prefix" != "x" ],[export PKG_CONFIG_PATH=$gtest_prefix/$libsuffix/pkgconfig])
-PKG_CHECK_MODULES(GTEST, gtest >= 1.9.0, [HAVE_GTEST="yes"])
+PKG_CHECK_MODULES(GTEST, gtest >= 1.8.0, [HAVE_GTEST="yes"])
 
 dnl --------------
 dnl Check for our Gtest enhancement to print assert counters:
